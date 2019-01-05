@@ -19,7 +19,7 @@ class EmbedBuilder {
 
     /**
      * Sets the title of the embed.
-     * @param {StringResolvable} title The title
+     * @param {string} title The title
      * @returns {EmbedBuilder}
      */
     setTitle(title){
@@ -31,7 +31,7 @@ class EmbedBuilder {
  
     /**
      * Sets the description of the embed.
-     * @param {StringResolvable} description The description
+     * @param {string} description The description
      * @returns {EmbedBuilder}
      */
     setDescription(description) {
@@ -69,7 +69,7 @@ class EmbedBuilder {
 
     /**
      * Sets the footer of the embed.
-     * @param {StringResolvable} text The text of the footer
+     * @param {string} text The text of the footer
      * @param {string} iconURL The icon URL of the footer
      * @returns {EmbedBuilder}
      */
@@ -86,7 +86,7 @@ class EmbedBuilder {
 
     /**
      * Sets the author of the embed.
-     * @param {StringResolvable} name The name of the author
+     * @param {string} name The name of the author
      * @param {string} iconURL The icon URL of the author
      * @returns {EmbedBuilder}
      */
@@ -114,8 +114,8 @@ class EmbedBuilder {
 
     /**
      * Adds a field to the embed.
-     * @param {StringResolvable} name The name of the field
-     * @param {StringResolvable} value The value of the field
+     * @param {string} name The name of the field
+     * @param {string} value The value of the field
      * @param {boolean} [inline=false] Set the field to display inline
      * @returns {EmbedBuilder}
      */
