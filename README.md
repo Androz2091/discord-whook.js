@@ -19,7 +19,7 @@ A simple discord webhook wrapper.
 >- Custom your webhook name/avatar
 
 #### Examples:
->__NOTE__: If you want disable custom username/avatar/content replace **strings** to **null**
+>__NOTE__: If you want disable custom username/avatar replace **strings** to **null**
 
 - Send a simple message 
 ```js
