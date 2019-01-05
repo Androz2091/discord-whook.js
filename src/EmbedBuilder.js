@@ -22,7 +22,7 @@ class EmbedBuilder {
      * @param {string} title The title
      * @returns {EmbedBuilder}
      */
-    setTitle(title){
+    setTitle(title) {
         if(!title) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a title to set a title!");
         if(title.length > 256) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a title with 256 characters max.!");
             this.embed[0].title = title;
@@ -119,7 +119,7 @@ class EmbedBuilder {
      * @param {boolean} [inline=false] Set the field to display inline
      * @returns {EmbedBuilder}
      */
-    addField(name, value, inline = false){
+    addField(name, value, inline = false) {
         if(!name) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a name to add a field!");
         if(name.length > 256) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a name of a field with 256 characters max.!");
         if(!value) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a value to add a field!");
