@@ -126,8 +126,8 @@ class EmbedBuilder {
         if(value.length > 1024) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a value of a field with 1024 characters max.!");
         if(this.embed[0].fields.length > 25) throw new Error("[DiscordWebhook-EmbedBuilder] You can include 25 fields max.!");
         this.embed[0].fields.push({
-            name: name,
-            value: value,
+            name,
+            value,
             inline: inline ? true : false
         });
         return this;
