@@ -3,7 +3,7 @@
 const axios = require("axios");
 const baseURL = "https://canary.discordapp.com/api/webhooks";
 
-class DiscordWebhook {
+class Webhook {
     /**
      * @constructor
      * @param {string} webhookid The webhook ID
@@ -47,4 +47,4 @@ class DiscordWebhook {
     }
 };
 
-module.exports = DiscordWebhook;
+module.exports = Webhook;
