@@ -11,9 +11,9 @@ class DiscordWebhook {
      */
     constructor(webhookid, webhooktoken) {
         if(!webhookid) throw new Error("[DiscordWebhook] No webhookID found!");
-        this.webhookid = webhookid;
+            this.webhookid = webhookid;
         if(!webhooktoken) throw new Error("[DiscordWebhook] No webhookToken found!");
-        this.webhooktoken = webhooktoken;
+            this.webhooktoken = webhooktoken;
     }
 
     /**
