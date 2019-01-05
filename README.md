@@ -15,6 +15,7 @@ A simple discord webhook wrapper.
 >- Custom your webhook name/avatar
 
 #### Examples:
+>__NOTE__: If you want disable custom username/avatar/content replace **strings** to **null**
 
 - Send a simple message 
 ```js
@@ -25,8 +26,7 @@ hook.send("content", "username", "avatarURL");
 ```
 
 - Send an Embed with a simple Embed builder
->*Do not use RichEmbed! It's an Embed builder only for webhook!*<br>
->__NOTE__: If you want disable custom username/avatar/content replace **strings** to **null**
+>Do not use Discord RichEmbed! It's an Embed builder only for webhook!<br>
 ```js
 const { Webhook, EmbedBuilder } = require("discord-whook.js");
 const hook = new Webhook("webhookID", "webhookToken");
