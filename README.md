@@ -5,7 +5,11 @@ A simple discord webhook wrapper.
 #### Installation:
 *Using NPM*
 
+*dev version:*
 `npm i github:Sworder71/discord-whook.js`
+
+*stable version:*
+`npm i discord-whook.js`
 
 <hr>
 
