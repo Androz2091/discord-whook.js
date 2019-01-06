@@ -38,7 +38,7 @@ class Webhook {
                     }
                 })
                     .then(() => {
-                        resolve("[DiscordWebhook] message sent!");
+                        console.log("[DiscordWebhook] message sent!");
                     })
                         .catch((err) => {
                             if(err) reject(new Error(`[DiscordWebhook] Error:\n${err}`));
