@@ -14,6 +14,7 @@ class EmbedBuilder {
             fields: [],
             image: null,
             footer: null,
+            timestamp: null
         }];
     }
 
@@ -82,6 +83,15 @@ class EmbedBuilder {
                 icon_url: iconURL
             };
             return this;
+    }
+
+    /**
+     * Sets the timestamp of the embed.
+     * @returns {EmbedBuilder}
+     */
+    setTimestamp() {
+        this.embed[0].timestamp = new Date();
+        return this;
     }
 
     /**
