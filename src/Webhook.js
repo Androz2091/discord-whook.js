@@ -25,7 +25,7 @@ class Webhook {
      * @returns {Promise<Object>}
      */
     send(message, username = "", avatarUrl = "", embed = []) {
-        if(!message) throw new Error("[DiscordWebhook] You cannot send an empty message.");
+        if(!message && embed.length === 0) throw new Error("[DiscordWebhook] You cannot send an empty message.");
             return new Promise(async(resolve, reject) => {
                 await axios({
                     method: "post", 
