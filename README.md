@@ -39,11 +39,12 @@ let Builder = new EmbedBuilder()
 .setTitle("Title")
 .setColor(0xffffff)
 .setAuthor("Author", "Author imageURL")
-.setDescription("Description")
 .setThumbnail("Thumbnail imageURL")
+.setDescription("Description")
 .addField("Name of field", "Value of field", false)
 .setImage("ImageURL")
-.setFooter("Footer text", "Footer imageURL");
+.setFooter("Footer text", "Footer imageURL")
+.setTimestamp();
 
 hook.send("content", "username", "avatarURL", Builder.embed);
 ```
