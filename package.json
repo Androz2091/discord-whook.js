@@ -1,6 +1,6 @@
 {
     "name": "discord-whook.js",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A simple discord webhook wrapper.",
     "main": "index.js",
     "scripts": {
