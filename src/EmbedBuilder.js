@@ -7,6 +7,7 @@ class EmbedBuilder {
     constructor() {
         this.embed = [{
             title: null,
+            url: null,
             author: null,
             color: null,
             description: null,
@@ -27,6 +28,17 @@ class EmbedBuilder {
         if(!title) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a title to set a title!");
         if(title.length > 256) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide a title with 256 characters max.!");
             this.embed[0].title = title;
+            return this;
+    }
+    
+    /**
+     * Sets the URL of the embed.
+     * @param {string}
+     * @returns {EmbedBuilder}
+     */
+    setURL(url) {
+        if(!url) throw new Error("[DiscordWebhook-EmbedBuilder] You must provide an URL to set an URL!");
+            this.embed[0].url = url;
             return this;
     }
  
