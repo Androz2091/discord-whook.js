@@ -99,10 +99,12 @@ class EmbedBuilder {
 
     /**
      * Sets the timestamp of the embed.
+     * @param {Date} The date of the embed timestamp
      * @returns {EmbedBuilder}
      */
-    setTimestamp() {
-        this.embed[0].timestamp = new Date();
+    setTimestamp(timestamp = new Date()) {
+        if (!(timestamp instanceof Date)) timestamp = new Date(timestamp);
+        this.embed[0].timestamp = timestamp;
         return this;
     }
 
